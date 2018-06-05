@@ -6,9 +6,9 @@ background-image: url(bg_front_regular.png)
 ---
 template:front
 
-.title[Min tittel]
+.title[My title]
 
-## Undertittel
+.subtitle[Subtitle]
 
 .author[Jane Doe]
 
