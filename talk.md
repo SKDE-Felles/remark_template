@@ -1,10 +1,27 @@
+name: blank
+layout: true
+
+---
+name: reduced
+layout: true
+class: left
+background-image: url(bg_wide_reduced.png)
+
+
+---
 name: front
 layout: true
 class: center, middle
-background-image: url(bg_front_regular.png)
+background-image: url(bg_front_wide.png)
 
 ---
-template:front
+name: normal
+layout: true
+class: left
+background-image: url(bg_wide.png)
+
+---
+template: front
 
 .title[My title]
 
@@ -13,12 +30,7 @@ template:front
 .author[Jane Doe]
 
 ---
-name: normal
-layout: true
-class: left
-background-image: url(bg_regular.png)
-
----
+template: normal
 
 # Slide 1
 
@@ -30,6 +42,8 @@ Some text
 - more list
 
 ---
+template: normal
+
 # Slide 2
 
 .left-column[
@@ -45,10 +59,10 @@ Some text to the right
 
 ]
 
-
 ---
+template: reduced
 
-# Slide with image
+# Slide with .svart[image]
 
 .right[![Right-aligned image](https://images-na.ssl-images-amazon.com/images/G/01/img15/pet-products/small-tiles/23695_pets_vertical_store_dogs_small_tile_8._CB312176604_.jpg)]
 
